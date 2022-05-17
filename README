@@ -1,0 +1,17 @@
+summary:
+Implement of HashMap and SpamDetector.
+
+files:
+HashMap.hpp
+SpamDetector.cpp
+README
+
+notes:
+I didn't make [] operator to const HashMap, because if a new key is the parameter - there need to be
+ a change in the HashMap.
+I couldn't find a way to make const and not const at() function without copy and paste.
+I personally think that if two HashMaps have the same pairs, upper and lower load factor - so there
+are the same, and the capacity is not factor to differ between them.
+I personally don't agree that if a key is not on HashMap so bucketSize() should throw an exception.
+In my opinion it should return the size of the bucket regardless if the bucket contain the key.
+
